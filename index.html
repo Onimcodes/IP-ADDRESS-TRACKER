@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+  integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+  integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+  crossorigin=""></script>
+ 
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+      <div class="container1" >
+          <h2>IP Address Tracker</h2  >
+          <form id="input-address">
+           
+              <input type="text"  placeholder="Search for any IP address or domain" minlength="7" maxlength="15" size="15" pattern="^((\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$">
+              <button  type="submit" value="submit" ><img src="images/icon-arrow.svg">
+              </button>
+            
+          </form>
+      </div>
+
+      <div class="container2">
+          <div class="address">
+            <p>IP ADDRESS</p>
+            <h4 id="d-ipaddress">192.212.174.101</h4>
+          </div>
+          <div class="others">
+            <p>LOCATION</p>
+            <h4 id="location">Brooklyn, NY <br> 10001</h4>
+          </div>
+          <div class="others">
+            <p>TIMEZONE</p>
+            <h4 id="timezone">UTC-0:500</h4>
+          </div>
+          <div class="others">
+            <p>ISP</p>
+            <h4 id="isp">SpaceX <br>Starlink</h4>
+          </div>
+      
+          </div>
+            <div id="map">
+
+            </div>
+</div>
+<script src="location.js"></script>
+
+<script src="app.js"></script>
+</body>
+</html>

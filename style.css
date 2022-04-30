@@ -1,0 +1,119 @@
+
+body{
+   font-family: sans-serif;
+}
+.wrapper{
+    height: 100vh;
+}
+.container1{
+    background: url('images/pattern-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+    position:relative;
+
+}
+#input-address{
+    padding: 0;
+    margin: 0 auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  
+}
+button{
+    padding:1rem;
+
+    margin: 0;
+    width: 10%;
+    border-radius: 0 10px 10px 0;
+    border:none;
+}
+input{
+    outline: none;
+    border: none;
+    width: 80%;
+    /* padding: 1%; */
+    border-radius:10px 0 0 10px;
+    
+}
+input::after{   
+    font-size: 20px;
+}
+.container1 h2{
+    margin: 0;
+    padding-top: 1%;
+    color:white;
+
+    
+}
+.container2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    margin:0 auto;
+    border-radius: 10px;
+    color:black;
+    background: white;
+    padding: 2%;
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    z-index: 10;
+   
+}
+button{
+    background: black;
+}
+.others{
+    border-left:1px solid black;
+    padding-left: 10%;
+    
+    
+}
+.others p{
+    font-size: 10px;
+}
+.address{
+    padding-left: 10%;
+}
+.address p{
+    font-size: 10px;
+}
+
+#map{
+    height: 80%;
+    z-index: 5;  
+}
+
+@media screen and (max-width:700px) {
+    .container2{
+        grid-template-columns:1fr;
+        width: 90%;
+        text-align: center;
+      left: 3%;
+    }
+    .container2 h4{
+        margin: 0;
+    }
+    
+    .address{
+        padding: 0;
+    }
+    .others{
+        
+        border: 0;
+        padding:0;
+       
+    }
+    .input-group{
+      width: 100%;
+    }
+    #input-address{
+        width:80%;
+    }
+}
